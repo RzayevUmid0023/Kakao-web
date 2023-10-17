@@ -1,0 +1,121 @@
+.Navbar_section{
+    position: fixed;
+    top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.Navbar_section_middle{
+    width: 1570px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15px ;
+    backdrop-filter: blur(7px);
+    padding: 20px 30px;
+    border-radius: 40px;
+
+}
+
+.Navbar_left{
+    display: flex;
+}
+.Navbar_left img{
+    color: white;
+    height: 22px;
+}
+
+.Navbar_left .Links ul{
+    display: flex;
+    margin-left: 40px;
+}
+
+.Navbar_left .Links ul li{
+    list-style: none;
+    font-size: 14px;
+    letter-spacing: 0.2em;
+}
+
+.Navbar_left .Links ul li a{
+    text-transform: uppercase;
+    text-decoration: none;   
+    color: white;
+    padding: 32px 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .45s;
+ }
+
+ .Navbar_left .Links ul li a:hover{
+    color: rgb(242, 204, 204);
+ }
+
+ .Navbar_right{
+    display: flex; 
+}
+
+.Navbar_right span{
+    color: white;
+    line-height: 1rem;
+    border: 1px solid rgba(255, 255, 255, .5);
+    border-radius: 100px;
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: all .45s;
+}
+
+.Navbar_right span:hover{
+    border:1px solid white;
+    box-shadow: 1px 1px 10px 3px rgba(255,255,255,0.74);
+-webkit-box-shadow: 1px 1px 10px 3px rgba(255,255,255,0.74);
+-moz-box-shadow: 1px 1px 10px 3px rgba(255,255,255,0.74);
+}
+
+.Navbar_right span button{
+    background-color: transparent;
+    color: white  ;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    
+
+}
+
+.Menu-icon{
+    display: none;
+}
+.Menu-icon button{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+
+
+/*--------------------- Media Screen ---------------------*/
+
+@media screen and (max-width: 1900px) {
+    .Navbar_section_middle{
+        width: 1170px;
+    }
+}
+@media screen and (max-width: 990px) {
+     .Navbar_left .Links{
+        display: none;
+     }
+
+     .Navbar_section_middle .Navbar_right{
+        display: none;
+     }
+
+     .Menu-icon{
+        display: block;
+        
+     }
+}
